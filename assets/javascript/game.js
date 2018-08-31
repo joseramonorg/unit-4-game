@@ -39,19 +39,19 @@ alert("You won! You matched the Number to Get with your final score of " + userT
   $('#numberWins').text(wins);
   reset();
 }
-//addes the losses to the userTotal
+
 function loser(){
 alert ("You lose! Your final score was " + userTotal + " you needed to match " + Random);
   losses++;
   $('#numberLosses').text(losses);
   reset()
 }
-//sets up click for jewels
+
   $('#one').on ('click', function(){
     userTotal = userTotal + num1;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
-          //sets win/lose conditions
+        
         if (userTotal == Random){
           yay();
         }
@@ -74,7 +74,7 @@ alert ("You lose! Your final score was " + userTotal + " you needed to match " +
     userTotal = userTotal + num3;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal);
-//sets win/lose conditions
+
           if (userTotal == Random){
           yay();
         }
