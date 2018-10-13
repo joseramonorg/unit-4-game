@@ -35,13 +35,18 @@ function reset(){
 //Marcador
 function yay(){
 alert("You won! You matched the Number to Get with your final score of " + userTotal);
+alert ("The values of the gems were: Blue " + num1 + 
+  " Green " + num2 + " Red " + num3 + " Yellow " + num4)
   wins++; 
+  
   $('#numberWins').text(wins);
   reset();
 }
 
 function loser(){
 alert ("You lose! Your final score was " + userTotal + " you needed to match " + Random);
+alert ("The values of the gems were: Blue " + num1 + 
+  " Green " + num2 + " Red " + num3 + " Yellow " + num4)
   losses++;
   $('#numberLosses').text(losses);
   reset()
